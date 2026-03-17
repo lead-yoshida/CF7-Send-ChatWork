@@ -87,7 +87,7 @@ class CF7_ChatWork_Notify {
 			esc_attr($this->opt_key),
 			esc_attr($opt['api_token'])
 		);
-		echo '<p class="description">ChatWork の API トークン（X-ChatWorkToken）。</p>';
+		echo '<p class="description">Chatwork APIトークンを入力してください。<br>取得URL（要Chatworkログイン）：<a target="_blank" href="https://www.chatwork.com/service/packages/chatwork/subpackages/api/token.php">https://www.chatwork.com/service/packages/chatwork/subpackages/api/token.php</a></p>';
 	}
 
 	public function field_room_id() {
@@ -97,7 +97,7 @@ class CF7_ChatWork_Notify {
 			esc_attr($this->opt_key),
 			esc_attr($opt['room_id'])
 		);
-		echo '<p class="description">通知先ルームの数値ID。</p>';
+		echo '<p class="description">通知先ルームの数値ID。例）https://www.chatwork.com/#!rid<b>123456789</b></p>';
 	}
 
 	public function field_confirm_path() {
